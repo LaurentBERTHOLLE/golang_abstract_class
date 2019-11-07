@@ -6,14 +6,17 @@ type Interface interface {
 	Method3() string
 }
 
-func Method1(i Interface) string {
+func Function(i Interface) {
+}
+
+func Function1(i Interface) string {
 	return i.Method1()
 }
 
-func Method2(i Interface) string {
+func Function2(i Interface) string {
 	return i.Method2()
 }
 
-func Method3(i Interface) string {
+func Function3(i Interface) string {
 	return i.Method3()
 }

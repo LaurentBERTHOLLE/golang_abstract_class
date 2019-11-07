@@ -5,13 +5,11 @@ import (
 	"testing"
 )
 
-func TestDummy(t *testing.T) {
-	// Not working because AbstractClass does not implements all methods of Interface
-	//assert.Equal(t, "", Method1(AbstractClass{}))
+func TestMethods(t *testing.T) {
+	// Not working because AbstractClass does not implement all methods of Interface
+	//assert.Equal(t, "", Function(AbstractClass{}))
 
-	concreteType := ConcreteType{}
-
-	assert.Equal(t, "Abstract method 1", Method1(concreteType))
-	assert.Equal(t, "Concrete method 2", Method2(concreteType))
-	assert.Equal(t, "Concrete method 3", Method3(concreteType))
+	assert.Equal(t, "Abstract method 1", Function1(ConcreteType{}))
+	assert.Equal(t, "Concrete method 2", Function2(ConcreteType{}))
+	assert.Equal(t, "Concrete method 3", Function3(ConcreteType{}))
 }
