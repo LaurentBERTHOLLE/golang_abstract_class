@@ -1,0 +1,1 @@
+# golang_abstract_class
